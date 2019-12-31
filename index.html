@@ -19,7 +19,7 @@
                     <div class="player-current-score" id="current-0">11</div>
                 </div>
             </div>
-            
+            <div id="alert" display="none"></div>
             <div class="player-1-panel">
                 <div class="player-name" id="name-1">Player 2</div>
                 <div class="player-score" id="score-1">72</div>
@@ -28,14 +28,17 @@
                     <div class="player-current-score" id="current-1">0</div>
                 </div>
             </div>
-            
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <div id="newGameScore">
+                <input id="newScore" type='text' value="Enter Number"><button id="ok">OK</button> <br />
+                <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            </div>
+
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
             
             <img src="./assets/images/dice-5.png" alt="Dice1" id="dice1" class="dice">
             <img src="./assets/images/dice-5.png" alt="Dice2" id="dice2"  class="dice">
-        </div>
+        </divclass="btn-new">
         
         <script src="./assets/JS/script.js"></script>
     </body>
