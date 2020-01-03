@@ -68,14 +68,15 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     player.textContent = scores[activePlayer];
 
     //Check if player won the game
-    if (scores[activePlayer] >= winningNumber) {
+    if (scores[activePlayer] >= winningNumber && scores[activePlayer] !== 0) {
         document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
         document.getElementById('dice1').style.display = 'none';
         document.getElementById('dice2').style.display = 'none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
         gamePlaying = false;
-        console.log(winningNumber)
+        console.log(winningNumber);
+
     } else {
         
         nextPlayer();
@@ -136,10 +137,15 @@ document.getElementById('ok').addEventListener('click', function(){
    
     var inputBox = document.getElementById('newScore');
     var newScore = document.getElementById('newScore').value;
-    var addNumber = document.getElementById('newGameScore');
-
-    addNumber.prepend('Winning Number Score'+ newScore);
+    var enterNumber = document.getElementById('enterNumber');
+    var okButton =  document.getElementById('ok');
+    var addedWinningScore = document.getElementById('addedWinningScore');
+  
     
+    addedWinningScore.innerHTML = '<strong>Winning Number Score : ' + newScore + '</strong>';
+    enterNumber.style.display = "none";
+    okButton.disabled = true
+   
     winningNumber = newScore
     newScore ? inputBox.style.display = "none" :  inputBox.style.display = "block";
     
@@ -165,7 +171,10 @@ function init() {
     document.getElementById('name-0').textContent = 'Player 1';
     document.getElementById('name-1').textContent = 'Player 2';
     document.getElementById('newScore').style.display = "block";
-    document.getElementById('newScore').value = '0';
+    document.getElementById('newScore').value = '';
+    document.getElementById('enterNumber').style.display = "block";
+    document.getElementById('ok').disabled = false;
+    document.getElementById('addedWinningScore').innerHTML = " "
 
     document.querySelector('.player-0-panel').classList.remove('winner');
     document.querySelector('.player-1-panel').classList.remove('winner');
