@@ -26,8 +26,6 @@ GAME RULES:
 
 - The first player to reach the set score on the GLOBAL score wins the game.
 
-    ![Winner](/assets/images/gifs/winner.gif)
-
 This is how you play the game.
 Enjoy!! 
 
