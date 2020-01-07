@@ -51,12 +51,12 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
       removeScore();
       nextPlayer();
       lastRoll = 0;
-      console.log(lastRoll, roundScore)
+   
     } else if (randomDiceNumber1 !== 1 && randomDiceNumber2 !== 1) {
       //add score
       roundScore += totalRoll;
       diceRoll = roundScore;
-      console.log(lastRoll, roundScore)
+     
       document.querySelector("#current-" + activePlayer).textContent = roundScore;
         lastRoll = 0;
       //player looses entire score if he rolls two 6's resulting in next player's turn
@@ -92,7 +92,6 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
         .querySelector(".player-" + activePlayer + "-panel")
         .classList.remove("active");
       gamePlaying = false;
-      console.log(winningNumber);
     } else {
       nextPlayer();
     }
