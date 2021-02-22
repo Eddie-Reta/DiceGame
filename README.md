@@ -1,7 +1,21 @@
 # DiceGame
 
-This is PIG(Dice Game) which consist of two players so grab another person.
+  Pig is a simple dice game. Players take turns to rolling the dice as many times as they wish,
+  adding all roll results to a running total. Players will lose their gained score for the turn if they roll a 1. Adding 
+  to loosing their score; if a player rolls two 6's in a row they also loose their entire score.
+  Take it slow hold to your number or loose it all at once now lets play the game.
 
+# Goal
+
+ This game was created to further push my knowledge just using Vanilla Javascript.
+
+# Technologies/Framework
+
+ * Javascript
+ * HTML
+ * CSS
+
+# Usage
 
 GAME RULES:
 
@@ -29,3 +43,10 @@ GAME RULES:
 This is how you play the game.
 Enjoy!! 
 
+# Credit 
+  
+ Udemy course on Javascript.
+
+# License 
+
+ MIT :copyright: **Eduardo Reta Jr.**

@@ -62,7 +62,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
       //player looses entire score if he rolls two 6's resulting in next player's turn
     } else {
       //next player
-      messageAlert("You have rolled a 1; Next player's turn.", 1000);
+      messageAlert("You have rolled a 1; Next player's turn.", 2500);
       removeScore();
       nextPlayer();
     }
